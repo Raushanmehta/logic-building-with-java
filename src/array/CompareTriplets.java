@@ -1,6 +1,5 @@
 package array;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,7 +10,6 @@ public class CompareTriplets {
         int bobScore = 0;
 
         for(int i = 0; i < a.size(); i++){
-
             if(a.get(i) > b.get(i)){
                 aliceScore++;
             } else if (a.get(i) <b.get(i)) {
@@ -19,9 +17,7 @@ public class CompareTriplets {
             }
         }
        return Arrays.asList(aliceScore, bobScore);
-
     }
-
     public static void main(String[] args) {
 
         List<Integer> a = Arrays.asList(1,2,3);
@@ -29,6 +25,4 @@ public class CompareTriplets {
         List<Integer> result = compareTriplets(a,b);
         System.out.println(result);
     }
-
-
 }
